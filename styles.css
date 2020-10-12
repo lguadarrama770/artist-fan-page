@@ -1,16 +1,28 @@
+body {
+    background-image: linear-gradient(#8B0000, #7B68EE);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #maluma {
-    border-radius: 25px;
+    border-radius: 55%;
+    border: 5px solid #8B0000;
     padding: 20px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     width: 50%;
 }
 
+img {
+    border-radius: 30px;
+}
 
 .border {
+    border-radius: 10px;
     background-color: #F8F8FF;
     border-top: 2px solid lightgrey; 
     border-bottom: 2px solid lightgrey;
