@@ -1,5 +1,44 @@
+#maluma {
+    border-radius: 25px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 .border {
     background-color: #F8F8FF;
     border-top: 2px solid lightgrey; 
     border-bottom: 2px solid lightgrey;
   }
+
+  /* floats*/
+  .vma {
+      width: 90%;
+      height: 598px;
+  }
+
+  .mtv, .grammy {
+      width: 50%;
+
+  }
+
+  .mtv {
+      float: left;
+  }
+  
+  .grammy {
+      float: right;
+  }
+
+/*clearfix*/
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
