@@ -5,6 +5,7 @@
 	background: navy;
   margin-bottom: 30px;
   width: 100%;
+  position: relative;
 }
 
 body {
@@ -26,7 +27,6 @@ div {
 .main-nav {
     list-style-type: none;
     display: inline-block;
-    float: inline-end;
 }
 
 .main-nav li {
