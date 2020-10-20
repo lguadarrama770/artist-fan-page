@@ -1,18 +1,32 @@
 .main-header {
-    /* padding-top: 1em; */
-	padding-bottom: 1em;
+  display: inline-block;
+  padding-top: 1px;
+	padding-bottom: 2px;
 	background: navy;
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 body {
     background-image: linear-gradient(#8B0000, #7B68EE);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Architects Daughter", Arial, Helvetica, sans-serif;
 }
 
+
+div {
+  margin-top: 25px;
+    margin-bottom: 35px;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
 .main-nav {
-    list-style-type: none
+    list-style-type: none;
+    display: inline-block;
+    float: inline-end;
 }
 
 .main-nav li {
@@ -25,10 +39,28 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   }
-  li a:hover {
-    background-color: #7B68EE;
-  }
 
+  a {
+    color: #FFFFFF;
+  }
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #FFFFFF;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
 #maluma {
     border-radius: 55%;
     border: 5px solid navy;
@@ -45,6 +77,40 @@ body {
 img {
     border-radius: 30px;
 }
+.logo {
+  width: 200px;
+  float: inline-start;
+}
+.home-img {
+  /* width: 100%; */
+  /* padding: 5px; */
+  /* height: 600px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+}
+.bio {
+  float: left;
+  width: 300px;
+  margin-top: 5px;
+  margin-right: 25px;
+  scroll-margin-bottom: 25px;
+  /* border: 5px solid navy; */
+  box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
+}
+
+.mujeres {
+  float: right;
+  width:600px;
+  margin-top: 5px;
+  margin-left: 25px;
+  scroll-margin-bottom: 35px;
+  /* border: 5px solid navy; */
+  box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
+}
+
 
 .border {
     background-color: #F8F8FF;
@@ -64,10 +130,49 @@ img {
     border: 8px solid navy;
     margin: 60px;
     margin-bottom: 20px;
-    background:;
     background-size: cover;
     box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
     border-radius: 20px;
+  }
+
+  button {
+  background-color: #000080;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #000080;
+  }
+
+footer {
+  background-color: #808080;
+}
+
+  .admire {
+    flex: 1;
   }
   /* floats*/
   .vma {
