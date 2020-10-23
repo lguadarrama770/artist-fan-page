@@ -1,6 +1,6 @@
 .main-header {
   padding-top: 1px;
-  background-color: rgba(0,0,128, .8);
+  background-color: rgba(0,0,128, .9);
   border-left: 5px solid navy;
   border-right: 5px solid navy;
   border-bottom: 20px solid navy;
@@ -10,19 +10,6 @@
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.main-nav {
-  list-style-type: none;
-  flex: 1;
-  /* justify-content: space-around; */
-}
-
-.logo {
-  width: 200px;
-}
-
-/* .main-header, .main-nav {
-  flex-direction: column;
-} */
 body {
     background-image: linear-gradient(#8B0000, #7B68EE);
     background-repeat: no-repeat;
@@ -37,9 +24,30 @@ div {
 	width: 100%;
 	margin: 0 auto;
 }
-/* .main-nav > ul {
-  display: flex;
-} */
+
+.admire {
+  flex: 1;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+blockquote {
+  color: #BA324F;
+}
+
+li {
+  color: white;
+}
+/* main navigation */
+.main-nav {
+  list-style-type: none;
+  flex: 1;
+  margin-bottom: 25px;
+  /* justify-content: space-around; */
+}
+
 .main-nav > li {
     background-color: navy;
     text-align: center;
@@ -77,6 +85,16 @@ div {
   a:active {
     color: blue;
   }
+
+
+
+
+  /* Images */
+  
+.logo {
+  width: 200px;
+}
+
 #maluma {
     border-radius: 55%;
     border: 5px solid navy;
@@ -94,11 +112,8 @@ img {
     border-radius: 30px;
 }
 .home-img {
-  /* width: 100%; */
-  /* padding: 5px; */
-  /* height: 600px; */
   display: block;
-  margin-left: auto;
+  margin-left: 375px;
   margin-right: auto;
   margin-top: 50px;
   width: 500px;
@@ -124,18 +139,20 @@ img {
 }
 
 
-.border {
-    background-color: #F8F8FF;
-    border-top: 2px solid black; 
-    border-bottom: 2px solid black;
-  }
 
+/* Container*/
   .container {
      width: 85%;
      margin: 0 auto; 
      border: 2px solid #000080;
-     padding: 2% 4% ;
+     padding: 2% 4%;
+     background-color: rgba(0,0,128, .8);
   }
+
+
+
+
+/* Registration form */  
 
   .registrating {
     color: white;
@@ -181,20 +198,33 @@ img {
     border: 3px solid #000080;
   }
 
+
+
+
+/* Footer */
 footer {
   background-color: #000080;
   margin: 0 auto; 
+  text-align: center;
 }
 
-  .admire {
-    flex: 1;
-  }
-  /* floats*/
-  .vma {
-      width: 100%;
-      height: 600px;
-  }
 
+
+
+
+  /*Flex container*/
+ 
+  /*Grid*/
+  .grid-container {
+  display: grid;
+  padding: 10px;
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  /* floats*/
   .mtv, .grammy {
       width: 50%;
 
@@ -207,6 +237,8 @@ footer {
   .grammy {
       float: right;
   }
+
+
 
 /*clearfix*/
   .group::after {
