@@ -108,9 +108,9 @@ li {
     width: 50%;
 }
 
-img {
-    border-radius: 30px;
-}
+/* img {
+   border-radius: 30px; 
+} */
 .home-img {
   display: block;
   margin-left: 375px;
@@ -138,6 +138,47 @@ img {
   box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
 }
 
+/* grid images*/
+
+.smile {
+  width: 500px;
+  height: 500px;
+}
+
+.long-hair {
+  width: 500px;
+  height: 500px;
+}
+
+.formal {
+  width: 500px;
+  height: 500px;
+}
+
+.gq-style {
+  width: 500px;
+  height: 500px;
+}
+
+.stage {
+  width: 500px;
+  height: 500px;
+}
+
+.telemundo {
+  width: 500px;
+  height: 500px;
+}
+
+.promo {
+  width: 500px;
+  height: 500px;
+}
+
+.mtv {
+  width: 500px;
+  height: 500px; 
+}
 
 
 /* Container*/
@@ -213,33 +254,35 @@ footer {
 
 
   /*Flex container*/
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 215, 0, .8);
+    
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+  }
  
+
   /*Grid*/
   .grid-container {
   display: grid;
-  padding: 10px;
+  background-color: rgb(255, 215, 0, .8);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px 10px;
+  box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
 }
 .grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  /* floats*/
-  .mtv, .grammy {
-      width: 50%;
-
-  }
-
-  .mtv {
-      float: left;
-  }
-  
-  .grammy {
-      float: right;
-  }
-
-
-
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  padding-top: 5px;
+  padding-left: 8px;
+  box-shadow: 0 0 6px 6px rgba(0,0,0, .5);
+}
 /*clearfix*/
   .group::after {
     content: "";
