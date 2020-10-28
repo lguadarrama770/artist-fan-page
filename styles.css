@@ -4,12 +4,11 @@
   border-left: 5px solid navy;
   border-right: 5px solid navy;
   border-bottom: 20px solid navy;
-  width: auto;
-  position: relative;
-  /* padding: 20px 0; */
+  /* width: auto;
+  position: relative; */
   margin: 0 auto;
   margin-bottom: 50px;
-  display: block;
+  /* display: block; */
 }
 body {
     background-image: linear-gradient(#8B0000, #7B68EE);
@@ -45,13 +44,16 @@ blockquote {
 li {
   color: white;
 }
+
+
+
+
 /* main navigation */
 .main-nav {
   display: block;
   list-style-type: none;
   flex: 1;
   margin-bottom: 25px;
-  /* justify-content: space-around; */
 }
 
 .main-nav > li {
@@ -278,17 +280,25 @@ footer {
   .flex-container > div {
     margin: 10px;
   }
+
+  iframe {
+    border: 8px solid navy;
+  }
  
 
   /*Grid*/
   .grid-container {
-  padding: 20px;;
+  padding: 20px;
   display: grid;
   background-color: rgb(255, 215, 0, .8);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 5px 0px;
   box-shadow: 0 0 10px 6px rgba(0,0,0, .5);
+}
+
+.grid-item {
+  justify-items: center;
 }
 /*clearfix*/
   .group::after {
@@ -298,6 +308,84 @@ footer {
   }
 
   /*Media Queries*/
+  @media all and (max-width: 1020px){
 
-  @media only screen and (min-width: ) {
-  }
+    .main-header {
+      font-size:xx-large;
+    }
+
+    .container {
+      font-size:x-large;
+    }
+
+    button {
+      font-size:xx-large;
+    }
+
+      .home-img {
+        margin-left: 250px;
+      }
+      .grid-container {
+        grid-template-columns: 1fr;
+        position: relative;
+      }
+
+      .grid-container div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+
+      .flex-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      .main-nav {
+        display: inline;
+        margin-bottom: 25px;
+        flex: none;
+      }
+      
+      .main-nav > li {
+          background-color: navy;
+          text-align: center;
+          display: inline;
+          margin: 10px 10px;
+          padding: 20px;
+          float: none;
+        }
+
+      .bio {
+        width: 400px;
+        height: 600px;
+        /* float: none; */
+        margin-left: auto;
+        margin-right: 20px;
+      }
+
+      .mujeres {
+        width: 700px;
+        height: 400px;
+        float: none;
+        
+      }
+
+      .flex-container > div {
+        margin: 0 auto;
+      }
+
+      iframe {
+        width: 700px;
+        height: 400px;
+      }
+
+      footer, .registrating {
+        font-size:xx-large;
+      }
+    }
+
+@media all and (max-width: 600px) {
+
+}
